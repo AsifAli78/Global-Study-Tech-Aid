@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Professional website development services including responsive design, SEO optimization, and user experience best practices." />
+  <title>Website Development | Our Services</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+    
+    body {
+      font-family: 'Poppins', sans-serif;
+      padding: 0;
+      margin: 0;
+      background: linear-gradient(135deg, #f5f7fa 0%, #e4f0fb 100%);
+      color: #333;
+      line-height: 1.6;
+    }
+    
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 40px 20px;
+    }
+    
+    header {
+      background: linear-gradient(90deg, #1e88e5 0%, #0d47a1 100%);
+      color: white;
+      padding: 80px 0;
+      text-align: center;
+      clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+      margin-bottom: 60px;
+    }
+    
+    h1 {
+      font-size: 3rem;
+      margin: 0;
+      animation: fadeInUp 1s ease;
+    }
+    
+    h2 {
+      color: #1e88e5;
+      margin-top: 40px;
+      position: relative;
+      padding-bottom: 10px;
+    }
+    
+    h2:after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 60px;
+      height: 3px;
+      background: #1e88e5;
+    }
+    
+    p {
+      font-size: 1.1rem;
+      margin-bottom: 20px;
+    }
+    
+    ul {
+      list-style-type: none;
+      padding: 0;
+    }
+    
+    li {
+      background: white;
+      margin-bottom: 10px;
+      padding: 15px;
+      border-radius: 5px;
+      box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
+      position: relative;
+      padding-left: 50px;
+    }
+    
+    li:hover {
+      transform: translateY(-5px);
+    }
+    
+    li:before {
+      content: "🌐";
+      position: absolute;
+      left: 15px;
+      top: 15px;
+      font-size: 1.2rem;
+    }
+    
+    .btn-contact {
+      display: inline-block;
+      margin-top: 30px;
+      padding: 15px 30px;
+      background: linear-gradient(90deg, #1e88e5 0%, #0d47a1 100%);
+      color: #fff;
+      text-decoration: none;
+      border-radius: 50px;
+      font-weight: bold;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      box-shadow: 0 5px 15px rgba(30, 136, 229, 0.4);
+      transition: all 0.3s ease;
+      animation: pulse 2s infinite;
+    }
+    
+    .btn-contact:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 8px 20px rgba(30, 136, 229, 0.6);
+    }
+    
+    .feature-box {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px;
+      margin: 40px 0;
+    }
+    
+    .feature {
+      flex: 1;
+      min-width: 250px;
+      background: white;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+      transition: all 0.3s ease;
+    }
+    
+    .feature:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+    }
+    
+    .feature-icon {
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+      color: #1e88e5;
+    }
+    
+    .testimonial {
+      background: white;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+      margin: 40px 0;
+      position: relative;
+    }
+    
+    .testimonial:before {
+      content: """
+      font-size 5rem;
+      color: #1e88e5;
+      opacity: 0.1;
+      position: absolute;
+      top: 10px;
+      left: 20px;
+    }
+    
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    
+    @keyframes pulse {
+      0% {
+        box-shadow: 0 0 0 0 rgba(30, 136, 229, 0.7);
+      }
+      70% {
+        box-shadow: 0 0 0 15px rgba(30, 136, 229, 0);
+      }
+      100% {
+        box-shadow: 0 0 0 0 rgba(30, 136, 229, 0);
+      }
+    }
+    
+    @media (max-width: 768px) {
+      h1 {
+        font-size: 2rem;
+      }
+      
+      header {
+        padding: 60px 0;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>🚀 Website Development</h1>
+      <p>Your digital presence, perfected</p>
+    </div>
+  </header>
+
+  <div class="container">
+    <p>
+      In today's digital-first world, your website is often the first impression customers have of your business. Our website development service delivers responsive, SEO-friendly websites that offer seamless experiences across all devices while converting visitors into customers.
+    </p>
+
+    <div class="feature-box">
+      <div class="feature">
+        <div class="feature-icon">📱</div>
+        <h3>Mobile-First Design</h3>
+        <p>With over 60% of web traffic coming from mobile devices, we prioritize mobile experiences that delight users and drive engagement.</p>
+      </div>
+      <div class="feature">
+        <div class="feature-icon">🔍</div>
+        <h3>SEO Optimized</h3>
+        <p>Built with search engine visibility in mind from day one, helping you rank higher and attract quality traffic.</p>
+      </div>
+      <div class="feature">
+        <div class="feature-icon">⚡</div>
+        <h3>Blazing Fast</h3>
+        <p>Optimized performance that keeps visitors engaged with sub-second load times and smooth interactions.</p>
+      </div>
+    </div>
+
+    <h2>✨ Responsive & SEO-Optimized</h2>
+    <p>
+      We build websites that adapt beautifully to every screen size—from smartphones to desktops to emerging devices. With SEO best practices built into every layer of development, your website will rank higher in search engines and attract more visitors organically. Our sites typically see a 40-200% increase in organic traffic within 3-6 months of launch.
+    </p>
+
+    <h2>💡 What We Offer:</h2>
+    <ul>
+      <li><strong>Modern, mobile-responsive designs</strong> that adapt seamlessly to any device with pixel-perfect precision</li>
+      <li><strong>Lightning-fast loading</strong> through advanced optimization techniques (90+ PageSpeed scores typical)</li>
+      <li><strong>Comprehensive on-page SEO</strong> implementation including schema markup, semantic HTML, and content optimization</li>
+      <li><strong>CMS integration</strong> with WordPress, Shopify, or custom solutions tailored to your workflow</li>
+      <li><strong>Advanced features</strong> like custom contact forms, interactive blogs, e-commerce functionality, and member portals</li>
+      <li><strong>Ongoing maintenance</strong> packages including security updates, performance monitoring, and content updates</li>
+    </ul>
+
+    <div class="testimonial">
+      <p>"After struggling with our outdated website for years, the team completely transformed our online presence. Our organic traffic increased by 180% in just four months, and we're seeing triple the leads from our website."</p>
+      <p><strong>- Sarah Johnson, Marketing Director at TechSolutions Inc.</strong></p>
+    </div>
+
+    <h2>🌟 Why Choose Us?</h2>
+    <p>
+      We combine cutting-edge design with robust technology to create websites that not only look stunning but perform exceptionally. Our process blends strategic thinking with technical excellence:
+    </p>
+    <ul>
+      <li><strong>User-Centered Design:</strong> Every decision is informed by how real users interact with your site</li>
+      <li><strong>Conversion Optimization:</strong> We design for results, not just aesthetics</li>
+      <li><strong>Future-Proof Technology:</strong> Built to evolve with your business needs</li>
+      <li><strong>Transparent Process:</strong> Regular updates and collaborative feedback loops</li>
+    </ul>
+    
+    <p>
+      Whether you need a simple landing page or a complex e-commerce platform with thousands of products, we have the expertise to deliver exceptional results. Our websites typically achieve:
+    </p>
+    <ul>
+      <li>40-75% faster load times than industry averages</li>
+      <li>2-3x improvement in conversion rates</li>
+      <li>50-200% increase in organic search traffic</li>
+      <li>99.9% uptime reliability</li>
+    </ul>
+
+    <center>
+      <a class="btn-contact" href="contact.html">📩 Get Your Free Consultation</a>
+    </center>
+  </div>
+</body>
+</html>
